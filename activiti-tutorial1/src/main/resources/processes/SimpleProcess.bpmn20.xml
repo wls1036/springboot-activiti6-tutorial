@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+  <process id="SimpleProcess" name="SimpleProcess" isExecutable="true">
+    <startEvent id="startEvent1"></startEvent>
+    <userTask id="sid-2B2AA039-82D2-479C-8FE9-6F48E4478BD8" name="Admin Approver" activiti:assignee="admin">
+      <extensionElements>
+        <modeler:activiti-idm-assignee xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:activiti-idm-assignee>
+        <modeler:assignee-info-email xmlns:modeler="http://activiti.com/modeler"><![CDATA[admin]]></modeler:assignee-info-email>
+        <modeler:assignee-info-lastname xmlns:modeler="http://activiti.com/modeler"><![CDATA[Administrator]]></modeler:assignee-info-lastname>
+        <modeler:initiator-can-complete xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:initiator-can-complete>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-F506EEC7-0411-4A97-930D-87500FF1414F" sourceRef="startEvent1" targetRef="sid-2B2AA039-82D2-479C-8FE9-6F48E4478BD8"></sequenceFlow>
+    <endEvent id="sid-2C31753A-3AE2-4C91-B4F8-3B5EED2B4FC5"></endEvent>
+    <sequenceFlow id="sid-9FC989EE-BBC3-4EB2-A7AF-DA4F2649A68F" sourceRef="sid-2B2AA039-82D2-479C-8FE9-6F48E4478BD8" targetRef="sid-2C31753A-3AE2-4C91-B4F8-3B5EED2B4FC5"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_SimpleProcess">
+    <bpmndi:BPMNPlane bpmnElement="SimpleProcess" id="BPMNPlane_SimpleProcess">
+      <bpmndi:BPMNShape bpmnElement="startEvent1" id="BPMNShape_startEvent1">
+        <omgdc:Bounds height="30.0" width="30.0" x="100.0" y="163.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-2B2AA039-82D2-479C-8FE9-6F48E4478BD8" id="BPMNShape_sid-2B2AA039-82D2-479C-8FE9-6F48E4478BD8">
+        <omgdc:Bounds height="80.0" width="100.0" x="255.0" y="138.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-2C31753A-3AE2-4C91-B4F8-3B5EED2B4FC5" id="BPMNShape_sid-2C31753A-3AE2-4C91-B4F8-3B5EED2B4FC5">
+        <omgdc:Bounds height="28.0" width="28.0" x="465.0" y="164.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-F506EEC7-0411-4A97-930D-87500FF1414F" id="BPMNEdge_sid-F506EEC7-0411-4A97-930D-87500FF1414F">
+        <omgdi:waypoint x="130.0" y="178.0"></omgdi:waypoint>
+        <omgdi:waypoint x="255.0" y="178.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-9FC989EE-BBC3-4EB2-A7AF-DA4F2649A68F" id="BPMNEdge_sid-9FC989EE-BBC3-4EB2-A7AF-DA4F2649A68F">
+        <omgdi:waypoint x="355.0" y="178.0"></omgdi:waypoint>
+        <omgdi:waypoint x="465.0" y="178.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
