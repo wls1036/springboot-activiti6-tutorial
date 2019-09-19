@@ -1,0 +1,5 @@
+com/definesys/totorial/activiti/controller/ActivitiController.class
+com/definesys/totorial/activiti/dto/TaskRepresentation.class
+com/definesys/totorial/activiti/ActivititiApplication.class
+com/definesys/totorial/activiti/config/ActivitiConfiguration.class
+com/definesys/totorial/activiti/service/ActivitiService.class

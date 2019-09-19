@@ -1,4 +1,4 @@
-package com.definesys.totorial.activiti.config;
+package com.definesys.totorial4.activiti.config;
 
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -11,12 +11,11 @@ import javax.sql.DataSource;
  * @Copyright: Shanghai Definesys Company.All rights reserved.
  * @Description:
  * @author: jianfeng.zheng
- * @since: 2019/9/5 2:09 PM
- * @history: 1.2019/9/5 created by jianfeng.zheng
+ * @since: 2019/9/20 1:23 AM
+ * @history: 1.2019/9/20 created by jianfeng.zheng
  */
 @Configuration
 public class ActivitiConfiguration {
-
     @Bean
     @Primary
     public DataSource database() {
